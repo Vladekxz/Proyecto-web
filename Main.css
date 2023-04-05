@@ -1,4 +1,15 @@
-#secondary-dropdown{
+.body{
+    background-color: #CFE8EF;
+}
+.container-pagina{
+    position: relative;
+    min-height: 100vh;
+}
+.wrap-contenido{
+    padding-bottom: 129px;
+}
+
+#btn-secondary:active a{
     color: white;
 }
 
@@ -12,13 +23,13 @@
     font-size: 35px;
 } 
 
-#secondary-dropdown{
+#btn-secondary{
     color: white;
     background-color: transparent;
     border-color: transparent;
     font-size: 20px;
 }
-#scondary-dropdown:active{
+#btn-secondary:active{
     color: white;
     background-color: transparent;
     border-color: transparent;
@@ -79,9 +90,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 5px;
-    
-   
+    margin-bottom: 50px;
 }
 .texto-titulo{
     padding: 5px 3px px 3px;
@@ -103,7 +112,7 @@
     display: flex ;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .lista-2{
     margin-bottom: 30px;
@@ -116,9 +125,6 @@
    padding: 1px 5px 1px 5px; 
    border-top: 1.5px solid #848484;
 }
-#footer-id{
-    padding-top: 16px;
-}
 #container{
     margin-left: 0;
     margin-right: 0;
@@ -127,25 +133,21 @@
 .card{
     margin-bottom: 50px;
 }
-.titulo{
-    margin-bottom: 50px;
-}
+
 .btn-outline-success{
     width: 60px;
 }
 .material-icons{
     align-items: center;
 }
-img{
+.img{
     width: 100%;
     height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
-
 }
 .card img:hover{
+    transition: 0.5s;
+    object-fit: cover;
     transform: scale(1.05);
-    
 }
 .container-item{
     display: grid;
@@ -155,11 +157,9 @@ img{
 #Card_descr{
     justify-content: start;
     width: 30%;
-    height: 30%;
+    height: 20%;
     transition: 0.5s;
     object-fit: cover;
-
-    
 }
 .descripcion{
     display: flex;
@@ -169,6 +169,60 @@ img{
 
 .card-body{
     padding-left: 20px;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 129px;
+}
+#formulario{
+    background-color: #bce5f0b7;
+    max-width: 600px;
+    min-width: 268px;
+    justify-content: center;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+#formulario a{
+    color: white;
+    text-decoration: none;
+}
+
+#formulario-container input{
+    max-width: 300px;
+}
+#formulario-container label{
+    display: flex;
+    justify-content: center;
+}
+#input-form{
+    display: flex;
+    justify-content: center;
+}
+.link-carrro{
+    text-decoration: none;
+    
+}
+#carro-icon{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    padding-right: 50px;
+}
+.login-navbar{
+    display: flex;
+    padding-right: 15px;
+    
+}
+#btn-reg{
+    margin-left: 20px;
+}
+.login-navbar a{
+    text-decoration: none;
+    color: white;
 }
 #floatingInput{
     width: 600px;
@@ -180,4 +234,14 @@ img{
 .TituloEditar{
     display: flex;
     justify-content: center;
+}
+#catalogo-img{
+    width: 100%;
+    height: 100%;
+}
+#form-agg a{
+   
+        color: white;
+        text-decoration: none;
+
 }
