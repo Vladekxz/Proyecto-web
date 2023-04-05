@@ -170,3 +170,14 @@ img{
 .card-body{
     padding-left: 20px;
 }
+#floatingInput{
+    width: 600px;
+}
+#descripcion{
+    width: 400px;
+    height: 100px;
+}
+.TituloEditar{
+    display: flex;
+    justify-content: center;
+}
