@@ -29,10 +29,14 @@
     border-color: transparent;
     font-size: 20px;
 }
+#dropdown {
+    background-color: #ff7411;
+}
 #btn-secondary:active{
     color: white;
-    background-color: transparent;
+    background-color: #ff7411;
     border-color: transparent;
+    
 }
 .dropdown-menu.show{
     background-color:white;
@@ -47,6 +51,7 @@
 
 #link-nav{
     color: white ;
+    background-color: #ff7411  ;
     font-size: 20px ;
 }
 #carouselExampleAutoplaying{
@@ -202,19 +207,22 @@
     display: flex;
     justify-content: center;
 }
-.link-carrro{
+.link-carro{
     text-decoration: none;
-    
+   
 }
+.link-carro
 #carro-icon{
     font-size: xx-large;
     font-weight: bolder;
-    color: white;
+    color: black;
     padding-right: 50px;
 }
 .login-navbar{
     display: flex;
+    flex-wrap: wrap;
     padding-right: 15px;
+    
     
 }
 #btn-reg{
@@ -240,8 +248,10 @@
     height: 100%;
 }
 #form-agg a{
-   
         color: white;
         text-decoration: none;
 
+}
+#navbarSupportedContent.show{
+    background-color: #ff7411;
 }
