@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Main.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Editar</title>
 </head>
-<body>
+<body >
+  
   <div class="container-pagina">
     <div class="wrap-contenido">
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top ">
@@ -43,81 +44,54 @@
               <button id="btn-reg" type="button" class="btn btn-primary" data-bs-target="#staticBackdrop">
                   <a href="Signup.html">Registrarse</a> 
                  </button>
+                 
             </div>
+            
             <a class="link-carro" href="Carro.html"><i id="carro-icon" class="bi bi-cart-check"></i></a>
           </div>
-          
-          
+          <!-- Hora navbar -->
+          <div class="container-clock">
+            <h1 id="time">00:00:00</h1>
+            
+          </div>
           
         </div>
+        
       </nav>
 
 
-            <div class="container">
+            <div class="container mt-5">
                 <div class="TituloEditar">
                     <h1>Editar Producto</h1>
                 </div>
-                <div class="tituloP">
-                    <h3>Nombre:</h3>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre producto">
-                    <label for="floatingInput">Ingrese el nombre del producto</label>
-                  </div>
-               
-                  <div class="tituloP">
-                    <h3>Descripcion producto</h3>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre producto">
-                    <label for="floatingInput">Ingrese una descripcion del producto</label>
-                  </div>
-                  <div class="tituloP">
-                    <h3>Valor</h3>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre producto">
-                    <label for="floatingInput">$ValorProducto</label>
-                  </div>
-                  <div class="tituloP">
-                    <h3>Stock</h3>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nombre producto">
-                    <label for="floatingInput">Ingrese el stock del producto</label>
-                  </div>
-                  <div class="tituloP">
-                    <h3>Imagen Producto</h3>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="file" class="form-control" id="floatingInput" placeholder="Nombre producto">
-                    <label for="floatingInput">Seleccione la imagen</label>
-                  </div>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Editar Producto
-                  </button>
+                <form id="miFormulario" action="">
+                        <div class="col">
+                            <label for="txtNombre">Nombre</label>
+                            <input class="form-control" type="text" placeholder="Ingrese su nombre" name="txtNombre" id="txtNombre">
+                        </div>
+                            <div class="col">
+                            <label for="txtDescripcion">Descripcion producto</label>
+                            <input class="form-control" type="text" placeholder="Ingrese la descripcion" name="txtDescripcion" id="txtDescripcion">
+                        </div>
+                            <div class="col">
+                                <label for="txtValor">Valor</label>
+                                <input class="form-control" type="text" placeholder="Ingrese su valor" name="txtValor" id="txtValor">
+                            </div>
+                            <div class="col">
+                                <label for="txtStock">Stock</label>
+                                <input class="form-control" type="number" placeholder="Ingrese su stock" name="txtStock" id="txtStock">
+                            </div>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          Seguro que desea editar
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver atras</button>
-                          <button type="button" class="btn btn-primary">Editar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                            <div class="col">
+                                <label for="txtNombre">Imagen</label>
+                                <input class="form-control" type="text" placeholder="Ingrese el url de la imagen" name="txtImagen" id="txtImagen">
+                            </div>
+                        <button id="btnEditar" class="btn btn-success mt-3">Editar</button>
+    
+                </form>
+                
             </div>
+
             <footer id="footer" class="bg-light text-center text-white">   
               <div class="container p-4 pb-0">
                 <section class="mb-4">
@@ -141,6 +115,10 @@
               
       </div>
   </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/Editar.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    
 </body>
 </html>
