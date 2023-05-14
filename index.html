@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="Main.css">
-  </head>
-  <body style="background-color: #cfe8ef77;">
+    <script src="pet.js"></script>
+    </head>
+  <body onload="checkGeo()">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   
-  <div class="container-pagina">
+  <div class="container-pagina" >
       <div class="wrap-contenido">
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top ">
           <div class="container-fluid">
@@ -36,9 +37,15 @@
                     <li><a class="dropdown-item" href="Agregar.html">Agregar</a></li>
                     <li><a class="dropdown-item" href="Editar.html">Editar</a></li>
                     <li><a class="dropdown-item" href="Catalogo.html">Catalogo</a></li>
+                    <li><a onclick="switchMode()" class="dropdown-item">Dark Mode/Light Mode</a></li>
                   </ul>
                 </div>
-              </ul>
+                </ul>
+                
+                <div class="geoloc">
+                  <h2 id="weather"></h2>
+                </div>
+
               <div class="login-navbar">
                 <button type="button" class="btn btn-primary" data-bs-target="#staticBackdrop">
                  <a href="Login.html">Ingresar</a> 
@@ -183,6 +190,10 @@
       </footer>
     </div>
   </div>
-      
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="pet.js"></script>
+ 
   </body>
 </html>
