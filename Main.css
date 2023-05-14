@@ -324,3 +324,6 @@
     max-width: 800px;
     padding: 20px;
   }
+ .outline {
+    outline: 1px solid blue;
+  }
