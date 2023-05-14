@@ -72,10 +72,8 @@ $(function(){
     })
 })
 
-  $(document).ready(function() {
-    $('.card-img-top').mouseenter(function() {
-      $(this).addClass('hover-effect');
-    }).mouseleave(function() {
-      $(this).removeClass('hover-effect');
-    });
+$('#catalogo-img').mouseenter(function() {
+    $(this).addClass('outline');
+  }).mouseleave(function() {
+    $(this).removeClass('outline');
   });
