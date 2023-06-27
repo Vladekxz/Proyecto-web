@@ -1,0 +1,128 @@
+{% extends "./navbar.html"%}
+{% load static %}
+
+{% block head%}
+{% endblock %}
+{% block body %}
+<div class="contenedor-carousel"> 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <button id="btn-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+    <div id="img-carousel" class="carousel-inner">
+      
+      <div  class="carousel-item active">
+        <img src="{% static 'img/Carousel_slide_1.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div  class="carousel-item">
+        <img src="{% static 'img/Carousel_slide_2.webp' %}" class="d-block w-100" alt="...">
+      </div>
+      <div  class="carousel-item">
+        <img src="{% static 'img/Carousel_slide_3.png' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    
+  
+    <button id="btn-next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </div>
+
+  <div class="titulo">
+    <h3 class="texto-titulo">
+      Artículos Destacados
+    </h3>
+  </div>
+  <div class="lista-1"> 
+    <div id="grupo-cards" >
+    
+      <div class="card-group">
+        <div class="card">
+          <img src="{% static 'img/Card-1.jpg' %}" class="card-img-top" alt="...">
+          <div id="cuerpo-cartas" class="card-body">
+            <h5 id="titulo-carta" class="card-title">Abrigo para gato</h5>
+            <p class="card-text">Abrigo para gato marca canin, especial para esos dias de frio.</p>
+          </div>
+          <div class="card-footer">
+ 
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'img/Card-2.jpg' %}" class="card-img-top" alt="...">
+          <div id="cuerpo-cartas" class="card-body">
+            <h5 id="titulo-carta" class="card-title">Casa para gatos</h5>
+            <p class="card-text">Con esta moderna casa para gatos tu felino se sentira mas acogido que nunca.</p>
+          </div>
+          <div class="card-footer">
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'img/Card-3.jpg' %}" class="card-img-top" alt="...">
+          <div id="cuerpo-cartas" class="card-body">
+            <h5 id="titulo-carta" class="card-title">Comida para gatos</h5>
+            <p class="card-text">Comida natural food para gatos, con ingredientes 100% naturales.</p>
+          </div>
+          <div class="card-footer">
+  
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="lista-2"> 
+  <div id="grupo-cards">
+    <div class="card-group">
+      <div class="card">
+        <img id="img-inicio" src="{% static 'img/Card-4.webp' %}" class="card-img-top" alt="...">
+        <div id="cuerpo-cartas" class="card-body">
+          <h5 id="titulo-carta" class="card-title">Cama Perro</h5>
+          <p class="card-text">Para que tu mascota duerma comoda.</p>
+        </div>
+        <div class="card-footer">
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'img/Card-5.webp' %}" class="card-img-top" alt="...">
+        <div id="cuerpo-cartas" class="card-body">
+          <h5 id="titulo-carta" class="card-title">Juguete Perro</h5>
+          <p class="card-text">Para que tu perro nunca se aburra.</p>
+        </div>
+        <div class="card-footer">
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'img/Card-6.jpg' %}" class="card-img-top" alt="...">
+        <div id="cuerpo-cartas" class="card-body">
+          <h5 id="titulo-carta" class="card-title">Premio para perro</h5>
+          <p class="card-text">Comida nutritiva para incentivar a tu mejor amigo.</p>
+        </div>
+        <div class="card-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<script>
+  $(document).ready(function() {
+    $('#img-inicio').mouseenter(function() {
+      $(this).addClass('outline');
+    }).mouseleave(function() {
+      $(this).removeClass('outline');
+    });
+  });
+</script>
+{% endblock %}
