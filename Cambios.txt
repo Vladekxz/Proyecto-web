@@ -1,6 +1,0 @@
-Inicio contiene boton de dark mode y light mode en otros y consume api.
-Editar tiene verificacion con jquery.
-Agregar tiene verificacion con js.
-Editar contiene hora que se actualiza en segundos.
-Carrito que da el total, se puede agregar y quitar objetos como tambien limpiar el carro.
-Pagina de carro contiene listar y filtro para buscar.
