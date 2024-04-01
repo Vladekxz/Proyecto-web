@@ -1,0 +1,21 @@
+
+.exercise {
+    margin-bottom: 20px;
+}
+.input-field {
+    width: 300px;
+}
+.alert {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.alert-success {
+    background-color: #c8e6c9;
+    border: 1px solid #2e7d32;
+}
+.alert-error {
+    background-color: #ffcdd2;
+    border: 1px solid #c62828;
+}
