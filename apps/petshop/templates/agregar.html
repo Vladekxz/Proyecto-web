@@ -18,8 +18,8 @@
     <pre><code>for i in _____(1, 6):
     print(i)</code></pre>
     <p>Resultado esperado de `i`: 1, 2, 3, 4, 5</p>
-    <input type="text" class="input-field">
-    <button onclick="checkAnswer(1)">Comprobar</button>
+    <input type="text" class="input-field" id="answer1">
+    <button onclick="checkAnswer(1, 'range')">Comprobar</button>
     <div id="alert-1" class="alert"></div>
 </div>
 
@@ -30,8 +30,8 @@ for i in range(1, 6):
     total _____ i
 print(total)</code></pre>
     <p>Resultado esperado: 15</p>
-    <input type="text" class="input-field">
-    <button onclick="checkAnswer(2)">Comprobar</button>
+    <input type="text" class="input-field" id="answer2">
+    <button onclick="checkAnswer(2, '+=')">Comprobar</button>
     <div id="alert-2" class="alert"></div>
 </div>
 
@@ -42,8 +42,8 @@ for i in range(1, 6):
     total _____ i
 print(total)</code></pre>
     <p>Resultado esperado: 120</p>
-    <input type="text" class="input-field">
-    <button onclick="checkAnswer(3)">Comprobar</button>
+    <input type="text" class="input-field" id="answer3">
+    <button onclick="checkAnswer(3, '*=')">Comprobar</button>
     <div id="alert-3" class="alert"></div>
 </div>
 
@@ -56,12 +56,30 @@ while i <= 5:
     i += 1
 print(total)</code></pre>
     <p>Resultado esperado: 120</p>
-    <input type="text" class="input-field">
-    <button onclick="checkAnswer(4)">Comprobar</button>
+    <input type="text" class="input-field" id="answer4">
+    <button onclick="checkAnswer(4, '*=')">Comprobar</button>
     <div id="alert-4" class="alert"></div>
 </div>
 
-<script src="{% static 'js/catalogo.js' %}"></script>
+
+<script>
+    function checkAnswer(exerciseNum, expectedAnswer) {
+        var userInput = document.getElementById('answer' + exerciseNum).value.trim();
+        var alertBox = document.getElementById('alert-' + exerciseNum);
+        
+        if (userInput === expectedAnswer) {
+            alertBox.innerHTML = "¡Respuesta correcta!";
+            alertBox.classList.add('correct');
+            alertBox.classList.remove('incorrect');
+            console.log("Respuesta correcta para el ejercicio " + exerciseNum);
+        } else {
+            alertBox.innerHTML = "Respuesta incorrecta. Por favor, inténtalo de nuevo.";
+            alertBox.classList.remove('correct');
+            alertBox.classList.add('incorrect');
+            console.log("Respuesta incorrecta para el ejercicio " + exerciseNum);
+        }
+    }
+</script>
 </body>
 </html>
 {% endblock %}
