@@ -1,49 +1,53 @@
-{% extends "./navbar.html"%}
-{% load static %}
-{% block head%}
-    
-{% endblock %}
-{% block body%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mini Tutoriales de Programación en Python</title>
-</head>
-<body>
+    {% extends "./navbar.html"%}
+    {% load static %}
+    {% block head%}
+    <link rel="stylesheet" href="{% static 'css/main.css'%}"></link>
+    {% endblock %}
+    {% block body%}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tutoriales de Programación en Python</title>
+    </head>
+    <body>
 
-<div class="tutorial">
-    <h2>Declaración de Variables en Python</h2>
-    <p><strong>Descripción:</strong> En Python, puedes declarar variables simplemente asignándoles un valor. No es necesario especificar el tipo de datos.</p>
-    <p><strong>Ejemplo:</strong> <code>x = 5</code> asigna el valor 5 a la variable <code>x</code>.</p>
-</div>
+    <div class="cotainerturiales">
+        <div class="tutorial">
+            <h2>Declaración de Variables en Python</h2>
+            <p><strong>Descripción:</strong> En Python, puedes declarar variables simplemente asignándoles un valor. No es
+                necesario especificar el tipo de datos.</p>
+            <p><strong>Ejemplo:</strong> <code>x = 5</code> asigna el valor 5 a la variable <code>x</code>.</p>
+        </div>
+        
+        <div class="tutorial">
+            <h2>Ciclo for en Python</h2>
+            <p><strong>Descripción:</strong> Un ciclo for se utiliza para iterar sobre una secuencia (como una lista, tupla,
+                rango, etc.) o cualquier objeto iterable.</p>
+            <pre><code>for elemento in secuencia:
+            # Cuerpo del ciclo</code></pre>
+            <p><strong>Ejemplo:</strong></p>
+            <pre><code>for i in range(5):
+            print(i)</code></pre>
+        </div>
+        
+        <div class="tutorial">
+            <h2>Ciclo while en Python</h2>
+            <p><strong>Descripción:</strong> Un ciclo while se ejecuta mientras una condición dada sea verdadera.</p>
+            <pre><code>while condición:
+            # Cuerpo del ciclo</code></pre>
+            <p><strong>Ejemplo:</strong></p>
+            <pre><code>x = 0
+        while x &lt; 5:
+            print(x)
+            x += 1</code></pre>
+        </div>
+    </div>
 
-<div class="tutorial">
-    <h2>Ciclo for en Python</h2>
-    <p><strong>Descripción:</strong> Un ciclo for se utiliza para iterar sobre una secuencia (como una lista, tupla, rango, etc.) o cualquier objeto iterable.</p>
-    <pre><code>for elemento in secuencia:
-    # Cuerpo del ciclo</code></pre>
-    <p><strong>Ejemplo:</strong></p>
-    <pre><code>for i in range(5):
-    print(i)</code></pre>
-</div>
-
-<div class="tutorial">
-    <h2>Ciclo while en Python</h2>
-    <p><strong>Descripción:</strong> Un ciclo while se ejecuta mientras una condición dada sea verdadera.</p>
-    <pre><code>while condición:
-    # Cuerpo del ciclo</code></pre>
-    <p><strong>Ejemplo:</strong></p>
-    <pre><code>x = 0
-while x &lt; 5:
-    print(x)
-    x += 1</code></pre>
-</div>
-
-</body>
-</html>
+    </body>
+    </html>
 
 
 
-{% endblock %}
+    {% endblock %}

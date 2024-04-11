@@ -1,85 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% extends "./navbar.html" %}
 <title>Ejercicios de Programación en Python</title>
 {% load static %}
-{% block head%}
-<link rel= "stylesheet" href= "{% static 'css/catalogo.css'%}"></link>
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/catalogo.css' %}">
 {% endblock %}
 </head>
 {% block body %}
+
 <body>
 
-<div class="exercise">
-    <p>Completa el siguiente ciclo for en Python:</p>
-    <pre><code>for i in _____(1, 6):
+    <div class="containerejercicios">
+        <div class="exercise">
+            <p><strong>1. </strong>Completa el siguiente ciclo for en Python:</p>
+            <pre><code>for i in _____(1, 6):
     print(i)</code></pre>
-    <p>Resultado esperado de `i`: 1, 2, 3, 4, 5</p>
-    <input type="text" class="input-field" id="answer1">
-    <button onclick="checkAnswer(1, 'range')">Comprobar</button>
-    <div id="alert-1" class="alert"></div>
-</div>
+            <p>Resultado esperado de `i`: 1, 2, 3, 4, 5</p>
+            <input type="text" class="input-field" id="answer1">
+            <button onclick="checkAnswer(1, 'range')">Comprobar</button>
+            <div id="alert-1" class="alert"></div>
+        </div>
 
-<div class="exercise">
-    <p>Dado el siguiente ciclo for en Python, completa la fórmula para obtener el valor correcto:</p>
-    <pre><code>total = 0
+        <div class="exercise">
+            <p><strong>2. </strong>Dado el siguiente ciclo for en Python, completa la fórmula para obtener el valor
+                correcto:</p>
+            <pre><code>total = 0
 for i in range(1, 6):
     total _____ i
 print(total)</code></pre>
-    <p>Resultado esperado: 15</p>
-    <input type="text" class="input-field" id="answer2">
-    <button onclick="checkAnswer(2, '+=')">Comprobar</button>
-    <div id="alert-2" class="alert"></div>
-</div>
+            <p>Resultado esperado: 15</p>
+            <input type="text" class="input-field" id="answer2">
+            <button onclick="checkAnswer(2, '+=')">Comprobar</button>
+            <div id="alert-2" class="alert"></div>
+        </div>
 
-<div class="exercise">
-    <p>Dada la siguiente declaración de variable y ciclo for en Python, completa la fórmula para obtener el valor correcto:</p>
-    <pre><code>total = 1
+        <div class="exercise">
+            <p><strong>3. </strong>Dada la siguiente declaración de variable y ciclo for en Python, completa la fórmula
+                para obtener el valor correcto:</p>
+            <pre><code>total = 1
 for i in range(1, 6):
     total _____ i
 print(total)</code></pre>
-    <p>Resultado esperado: 120</p>
-    <input type="text" class="input-field" id="answer3">
-    <button onclick="checkAnswer(3, '*=')">Comprobar</button>
-    <div id="alert-3" class="alert"></div>
-</div>
+            <p>Resultado esperado: 120</p>
+            <input type="text" class="input-field" id="answer3">
+            <button onclick="checkAnswer(3, '*=')">Comprobar</button>
+            <div id="alert-3" class="alert"></div>
+        </div>
 
-<div class="exercise">
-    <p>Dado el siguiente ciclo while en Python, completa la fórmula para obtener el valor correcto:</p>
-    <pre><code>total = 1
+        <div class="exercise">
+            <p><strong>4. </strong>Dado el siguiente ciclo while en Python, completa la fórmula para obtener el valor
+                correcto:</p>
+            <pre><code>total = 1
 i = 1
 while i <= 5:
     total _____ i
     i += 1
 print(total)</code></pre>
-    <p>Resultado esperado: 120</p>
-    <input type="text" class="input-field" id="answer4">
-    <button onclick="checkAnswer(4, '*=')">Comprobar</button>
-    <div id="alert-4" class="alert"></div>
-</div>
+            <p>Resultado esperado: 120</p>
+            <input type="text" class="input-field" id="answer4">
+            <button onclick="checkAnswer(4, '*=')">Comprobar</button>
+            <div id="alert-4" class="alert"></div>
+        </div>
 
+    </div>
 
-<script>
-    function checkAnswer(exerciseNum, expectedAnswer) {
-        var userInput = document.getElementById('answer' + exerciseNum).value.trim();
-        var alertBox = document.getElementById('alert-' + exerciseNum);
-        
-        if (userInput === expectedAnswer) {
-            alertBox.innerHTML = "¡Respuesta correcta!";
-            alertBox.classList.add('correct');
-            alertBox.classList.remove('incorrect');
-            console.log("Respuesta correcta para el ejercicio " + exerciseNum);
-        } else {
-            alertBox.innerHTML = "Respuesta incorrecta. Por favor, inténtalo de nuevo.";
-            alertBox.classList.remove('correct');
-            alertBox.classList.add('incorrect');
-            console.log("Respuesta incorrecta para el ejercicio " + exerciseNum);
+    <script>
+        function checkAnswer(exerciseNum, expectedAnswer) {
+            var userInput = document.getElementById('answer' + exerciseNum).value.trim();
+            var alertBox = document.getElementById('alert-' + exerciseNum);
+
+            if (userInput === expectedAnswer) {
+                alertBox.innerHTML = "¡Respuesta correcta!";
+                alertBox.classList.add('correct');
+                alertBox.classList.remove('incorrect');
+                console.log("Respuesta correcta para el ejercicio " + exerciseNum);
+            } else {
+                alertBox.innerHTML = "Respuesta incorrecta. Por favor, inténtalo de nuevo.";
+                alertBox.classList.remove('correct');
+                alertBox.classList.add('incorrect');
+                console.log("Respuesta incorrecta para el ejercicio " + exerciseNum);
+            }
         }
-    }
-</script>
+    </script>
 </body>
+
 </html>
 {% endblock %}
