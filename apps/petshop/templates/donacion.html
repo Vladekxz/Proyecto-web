@@ -1,0 +1,48 @@
+{% extends "./navbar.html" %}
+{% load static %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div class="container-donacion">
+    <div class="containertextosd">
+        <h1 class="aprendeh1d">¡Ayúdanos a Construir el Futuro del Aprendizaje! Tu Contribución Impulsa Nuestro Servicio a Nuevas Alturas!</h1>
+        <div id="donate-button-container">
+            <div id="donate-button-page"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production',
+                    hosted_button_id: '7P59QC9BJEAVG',
+                    image: {
+                        src: 'https://pics.paypal.com/00/s/YWEzOTc2ODMtY2U3NS00OWI5LWExN2YtMDQ3ZDdmYTEzYTc1/file.PNG',
+                        alt: 'Donate with PayPal button',
+                        title: 'PayPal - The safer, easier way to pay online!',
+                    }
+                }).render('#donate-button-page');
+            </script>
+        </div>
+        <div class="container-aprendep"><p class="aprendepd">Todas las donaciones se destinan a mejorar el servicio de Pylearning, permitiéndonos
+            ofrecer
+            una experiencia aún más enriquecedora para nuestros usuarios. Tu contribución nos ayuda a fortalecer y
+            expandir
+            nuestras herramientas y recursos educativos. ¡Gracias por apoyar nuestra misión de brindar aprendizaje de
+            calidad
+            para todos!</p></div>
+        
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% endblock %}
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#img-inicio').mouseenter(function () {
+            $(this).addClass('outline');
+        }).mouseleave(function () {
+            $(this).removeClass('outline');
+        });
+    });
+</script>
+{% endblock %}

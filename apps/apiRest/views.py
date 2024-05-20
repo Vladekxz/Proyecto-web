@@ -8,10 +8,5 @@ from apps.petshop.models import Producto
 
 # Create your views here.
 
-class ObtenerProductos(View):
-    def get(self,request):
-        productos = Producto.objects.all()
-        return JsonResponse(list(productos.values()), safe=False)
-
 
  

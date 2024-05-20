@@ -25,6 +25,7 @@ class Producto(models.Model):
         return txt.format(self.sku,self.stock, self.nombre)
 
     
+
 class Usuario(models.Model):
     idusuario = models.IntegerField(primary_key=True, default="id")
     nombre = models.CharField(max_length=50, default="usuario")   
@@ -32,3 +33,4 @@ class Usuario(models.Model):
     def __str__(self):
         txt = "ID: {0} - Nombre: {1} "
         return txt.format(self.idusuario, self.nombre)
+    

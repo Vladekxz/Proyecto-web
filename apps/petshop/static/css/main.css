@@ -86,48 +86,10 @@
     padding: 5px 3px px 3px;
 }
 
-#card-products {
-    justify-content: center;
-    margin-top: 0;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#grupo-cards {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-}
-
-.lista-1,
-.lista-2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
-
-.lista-2 {
-    margin-bottom: 30px;
-}
-
-#cards-edit {
-    flex: 1 0 33%;
-    min-height: 403;
-}
-
-#cuerpo-cartas {
-    padding: 1px 5px 1px 5px;
-    border-top: 1.5px solid #848484;
-}
-
 #container {
     margin-left: 0;
     margin-right: 0;
     padding-right: 0;
-}
-
-.card {
-    margin-bottom: 50px;
 }
 
 .btn-outline-success {
@@ -142,37 +104,6 @@
     width: 100%;
     height: 100%;
 }
-
-.card img:hover {
-    transition: 0.5s;
-    object-fit: cover;
-    transform: scale(1.05);
-}
-
-.container-item {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#Card_descr {
-    justify-content: start;
-    width: 30%;
-    height: 20%;
-    transition: 0.5s;
-    object-fit: cover;
-}
-
-.descripcion {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.card-body {
-    padding-left: 20px;
-}
-
-
 
 #formulario {
     background-color: #bce5f0b7;
@@ -205,16 +136,6 @@
     justify-content: center;
 }
 
-.link-carro {
-    text-decoration: none;
-}
-
-#carro-icon {
-    font-size: xx-large;
-    font-weight: bolder;
-    color: black;
-}
-
 .login-navbar {
     display: flex;
     flex-wrap: wrap;
@@ -228,21 +149,6 @@
 
 #floatingInput {
     width: 600px;
-}
-
-#descripcion {
-    width: 400px;
-    height: 100px;
-}
-
-.TituloEditar {
-    display: flex;
-    justify-content: center;
-}
-
-#catalogo-img {
-    width: 100%;
-    height: 100%;
 }
 
 #form-agg a {
@@ -314,6 +220,7 @@
 #tituloAgregar {
     padding-left: 500px;
 }
+
 /* NUEVO */
 
 
@@ -333,7 +240,7 @@
     border-color: white;
 }
 
-.btnreg a{
+.btnreg a {
     color: #111936 !important;
 }
 
@@ -347,13 +254,104 @@
     background-color: #b19b1e;
 }
 
+
+
+.btnotros {
+    color: #b19b1e;
+    background-color: #111936;
+    border-color: #b19b1e;
+    margin-right: 5px;
+}
+
+.btnotros:hover {
+    color: white;
+    background-color: #111936;
+    border-color: white;
+    margin-right: 5px;
+}
+
+.cotainerturiales {
+    display: flex;
+    flex-direction: column;
+    background-color: #212946;
+    color: white;
+    padding: 50px;
+}
+
+.containerejercicios {
+    display: flex;
+    flex-direction: column;
+    background-color: #212946;
+    color: white;
+    padding: 50px;
+}
+
+.footer222 {
+    background-color: #111936;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.exercise {
+    margin: 10px;
+}
+
+#logout {
+    color: white;
+}
+
+#logout:hover {
+    color: #b19b1e;
+}
+
+.btnContacto {
+    color: white;
+    background-color: #005e05;
+    border-radius: 25px;
+    padding: 15px;
+    border-color: white;
+    margin-right: 5px;
+}
+
+.btnContacto #btnContactoa {
+    text-decoration: none;
+    color: white;
+
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather {
+    font-size: 1rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+#weather-icon {
+    width: 40px;
+    height: auto;
+}
+
+
+
+
+
+
 .container1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #111936;
-    height: 70vh;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .containertextos {
@@ -362,9 +360,16 @@
     text-align: center;
     margin-bottom: 10px;
     color: white;
-    margin-left: 10%;
 }
-.aprendep{
+
+.imagenpy {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.aprendep {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -374,98 +379,35 @@
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-.containerimagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.imagenpy {
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.btnotros{
-    color: #b19b1e;
-    background-color: #111936;
-    border-color: #b19b1e;
-    margin-right: 5px;
-}
-
-.btnotros:hover{
-    color: white;
-    background-color: #111936;
-    border-color: white;
-    margin-right: 5px;
-}
-
-.cotainerturiales{
-    display: flex;
-    flex-direction: column;
-    background-color: #212946;
-    color: white;
-    padding: 50px;
-}
-
-.containerejercicios{
-    display: flex;
-    flex-direction: column;
-    background-color: #212946;
-    color: white;
-    padding: 50px;
-}
-
-.footer222{
-    background-color: #111936;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-}
-
-.exercise{
-    margin: 10px;
-}
-
-#logout{
     color: white;
 }
 
-#logout:hover {
-    color: #b19b1e;
-}
 
 .container2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #212946;
-    height: 70vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: #111936;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.containertextos2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: #2a2f4a;
+    border-radius: 20px;
+    padding: 30px;
 }
 
 .aprendep2 {
-    font-size: 16px;
-    margin-bottom: 2px;
-    text-align: center;
-    margin-right: 40px;
-    background-color: #111936;;
-    padding: 50px;
-    border-radius: 20px;
+   justify-content: justify;
+    font-size: 20px;
     font-weight: bold;
-}
-
-.img2 {
-    width: 200px;
-    height: auto;
+    margin-bottom: 5px;
 }
 
 .container3 {
@@ -474,29 +416,114 @@
     align-items: center;
     justify-content: center;
     background-color: #111936;
-    height: 30vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30px;
 }
 
 .containertextos3 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 10px;
     color: white;
-    
+    background-color: #2a2f4a;
+    border-radius: 20px;
+    padding: 30px;
 }
 
-.btnContacto{
+.btndonacion{
     color: white;
-    background-color: #005e05;
-    border-radius: 25px;
-    padding: 15px;
+    background-color: #111936;
     border-color: white;
     margin-right: 5px;
 }
 
-.btnContacto #btnContactoa{
+.btndonacion:hover{
+    background-color: #2a2f4a;
+    border-color: white;
+}
+
+.btndonacion a{
     text-decoration: none;
     color: white;
+}
 
+
+.container-donacion {
+    padding: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    min-height: 100%;
+   
+}
+
+.containertextosd {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: #111936;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container-aprendep{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2f4a;
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.aprendepd {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.aprendeh1d {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.aprendeh1d2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+.aprendepd2 {
+    justify-content: justify;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#donate-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    border-color: white;
+    margin-right: 5px;
+
+}
+#donate-button{
+    height: auto;
+    width: 300px;
+   
 }
