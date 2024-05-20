@@ -303,36 +303,8 @@
     transition: background-color 0.3s;
 }
 
-.product-image-container button:hover {
-    background-color: #3e8e41;
-}
-
-#cart li button {
-    margin-left: 10px;
-    font-size: 12px;
-    padding: 2px 6px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-}
-
-.cart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 800px;
-    padding: 20px;
-}
-
 .outline {
     outline: 1px solid blue !important;
-}
-
-#container-agregar {
-    padding-left: 600px !important;
-    margin-right: 0px !important;
-    margin-left: 0px;
 }
 
 :root {
