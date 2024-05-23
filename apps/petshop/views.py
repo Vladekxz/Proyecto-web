@@ -20,8 +20,8 @@ import json
 def  cargarInicio(request):
     return render(request,'inicio.html')
 
-def  cargarEditar(request):
-    return render(request,'editar.html')
+def  cargarmaterial(request):
+    return render(request,'material.html')
 
 def cargarLogin(request):
     return render(request,'login.html')
@@ -29,8 +29,8 @@ def cargarLogin(request):
 def cargarSignup(request):
     return render(request,'signup.html')
 
-def cargarAgregar(request):
-    return render(request,'agregar.html')
+def cargarproblemas(request):
+    return render(request,'problemas.html')
 
 def cargarDonacion(request):
     return render(request,'donacion.html')
