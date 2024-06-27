@@ -98,6 +98,7 @@
         </div>
       </div>
 
+   
       {% block body %}
       {% endblock %}
     </div>
@@ -146,8 +147,34 @@
         modalShown = false;
       });
     });
-    
   </script>
+
+  <style>
+    #whatsapp-button {
+      position: fixed;
+      bottom: 1px;
+      left: 1px;
+    }
+  
+    #whatsapp-button img {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+  <div id="whatsapp-button">
+    <a href="https://chat.whatsapp.com/GZDCT7PMyJ705vk3ik77P9" target="_blank">
+      <img src="https://storage.googleapis.com/msgsndr/yPWL3CE6mXUrw0onK3xR/media/6595cad99b1c986cebf77c8e.webp"
+        alt="WhatsApp">
+    </a>
+  </div>
+      <script>
+          document.getElementById('whatsapp-button').addEventListener('click', function () {
+              window.location.href = 'https://chat.whatsapp.com/GZDCT7PMyJ705vk3ik77P9';
+          });
+      </script>
+          
+
   {% block script %}
   {% endblock %}
 </body>
