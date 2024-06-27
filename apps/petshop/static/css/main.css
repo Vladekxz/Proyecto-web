@@ -527,3 +527,10 @@
     width: 300px;
    
 }
+
+.imgmads{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    margin: 30px;
+}
